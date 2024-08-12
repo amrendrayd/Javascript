@@ -31,3 +31,5 @@ user.welcomeMessage()
 // browser ke andar global object hota hai vo windows object hota hai 
 
 // IIFE :-- Immediately Invoked Function Expressions
+
+// call Stack 
