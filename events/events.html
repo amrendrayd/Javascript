@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <ul id="image">
+            <button id="a" class="submit">A</button>
+            <button id="google" class="submit">google</button>
+            <button class="submit">C</button>
+            <button class="submit">D</button>
+        </ul>
+    </div>
+</body>
+<script>
+    document.getElementById('image').addEventListener('click', function(e){
+        // alert("click now")
+        console.log("clicked inside the ul");
+        
+    },false)
+
+    document.getElementById('a').addEventListener('click', function(e){
+        console.log("A print");
+        e.stopPropagation()
+    }, false)
+
+    document.getElementById('google').addEventListener('click', function(e){
+        e.preventDefault()
+        console.log("Google clicked");
+    },false)
+</script>
+</html>
