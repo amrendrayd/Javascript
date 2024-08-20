@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event keycode</title>
+    <style>
+        body{
+            background-color: #212121;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            background-color: #ffffff;
+            color: #212121;
+            height: 40px;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            
+        }
+        a{
+            margin: 10px 20px 0 20px;
+            padding: 0;
+            
+        }
+        .logo {
+            color: #212121;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+            border: 1px solid black;
+            border-radius: 8px;
+            background-color: beige;
+        }
+
+        :hover.logo{
+            background-color: aquamarine;
+        }
+        .project {
+            background-color: #1c1c1c;
+            color: #ffffff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+        
+        table,th,td {
+            border: 1px solid #e7e7e7;
+        }
+
+        .color {
+            color: aliceblue;
+            display: flex;
+            flex-direction: row;
+        }
+        
+
+        
+
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/" aria-current="page" class="logo">Home</a>
+        <a href="http://www.youtube.com" target="_blank" class="logo">YouTUbe Channel</a>
+    </nav>
+    <div class="project">
+        <div id="insert">
+            <div class="key">Press the key and watch magic</div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
