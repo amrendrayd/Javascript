@@ -73,3 +73,22 @@ String.prototype.trueLength = function(){
 anotherUserName.trueLength()
 "amrendra".trueLength()
 "iceTea".trueLength()
+
+
+function setUserName (username){
+    // complex DB calls
+    this.username = username
+    console.log("called");
+    
+}
+
+function createUsers(username, email, password){
+    setUserName.call(this,username)
+    
+    this.email = email
+    this.password = password
+}
+
+const chai = new createUsers("chai", "chai@gmail.com", "1234")
+console.log(chai);
+
